@@ -3,6 +3,9 @@
 body{
   margin:0;
   padding: 0;
+  font-family: 'Rubik';
+  font-weight: 300;
+  color: white;
 }
 
 .container{
@@ -12,25 +15,57 @@ body{
 .atypic-logo{
   position: relative;
   margin-bottom: -51px;
+  margin-top: -8px;
   z-index: 50;
 }
 
 .craft{
   position: relative;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
   height: 500px;
   width: 1340;
   // background-image: url('../images/officeBW.jpg');
   // background-position: 70% 60%;
   // background-size: 150% 150%;
   // background-repeat: no-repeat;
-  margin: 0px 50px 0px 50px;
+  margin: -5px 50px 0px 50px;
   overflow: hidden;
   z-index: 1;
+
   img{
     transform: scale(1.68);
     padding-right: 650px;
     z-index: 1;
   }
+
+  .purpose{
+    position: relative;
+    top: 155px;
+    left: 465px;
+    align-self: center;
+    font-weight: 300;
+    font-size: 50px;
+    color: white;
+    z-index: 1000;
+  }
+
+  .statement{
+    position: relative;
+    width: 530px;
+    top: 160px;
+    left: 410px;
+    align-self: center;
+    text-align: center;
+    font-family: 'Rubik';
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: white;
+    z-index: 1000;
+  }
+
 }
 
 .craft::before{
@@ -41,7 +76,7 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #6E7EDE, #72D6C3);
+  background: linear-gradient(to right, #6E7EDE, #54A0EC, #72D6C3);
   opacity: 0.9;
   z-index: 20;
 }
@@ -49,10 +84,41 @@ body{
 .focus{
   height: 525px;
   background-color: #222E37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.focus-bucket{
-  width: 195px;
+.bucket-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  .our-focus{
+    width: 195px;
+    height: 274px;
+    margin-right: 60px;
+    font-size: 60px;
+    padding-top: 50px;
+  }
+
+  .focus-bucket{
+    width: 195px;
+    height: 274px;
+    background-color: #1B242C;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 2px solid white;
+
+    img{
+      align-self: center;
+    }
+  }
 }
 
 
@@ -63,8 +129,68 @@ body{
 }
 
 .work{
+  position: relative;
   height: 575px;
   background-color: #222E37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .form-header{
+    font-size: 50px;
+  }
+
+  .message-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 732px;
+    height: 260px;
+
+  }
+
+  .message-form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .message-form input{
+    margin-right: 40px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 50px;
+    background: #1B232C;
+    border: none;
+    border-bottom: 3px solid black;
+    line-height: 40px;
+    color: #0084BA;
+  }
+
+  .message-form span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message-form textarea{
+    height: 106px;
+    width: 574px;
+    background: #1B232C;
+    border: none;
+    border-bottom: 3px solid black;
+  }
+
+  .message-form .submit-btn{
+    height: 106px;
+    width: 44px;
+    background-color: #222E37;
+    border: 1px solid white;
+    border-bottom: 3px solid white;
+    margin-left: -40px;
+  }
+
 }
 
 .info-footer{
