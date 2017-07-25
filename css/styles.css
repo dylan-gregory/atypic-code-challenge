@@ -34,4 +34,25 @@ body {
   opacity: 0.9;
   z-index: 20; }
 
+.focus {
+  height: 525px;
+  background-color: #222E37; }
+
+.focus-bucket {
+  width: 195px; }
+
+.carousel {
+  height: 575px;
+  background: linear-gradient(to right, #72D6C3, #6E7EDE);
+  margin: 0px 50px 50px 50px; }
+
+.work {
+  height: 575px;
+  background-color: #222E37; }
+
+.info-footer {
+  height: 444px;
+  background: linear-gradient(#72D6C3, #6E7EDE);
+  margin: 0px 50px 50px 50px; }
+
 /*# sourceMappingURL=styles.css.map */
